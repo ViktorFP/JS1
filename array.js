@@ -158,7 +158,7 @@ var countSort = function(array, max) {
 		}
 	}
 	return array;
-}
+};
 var maxValue=10;
 data=getIntArray(10,maxValue);
 console.log('  array = ['+data+']');
@@ -189,7 +189,7 @@ var getMaxInt=function(array){
 		}	
 	}	
 	return max;
-}
+};
 
 var getMinInt=function(array){
 	let min;
@@ -205,7 +205,7 @@ var getMinInt=function(array){
 		}	
 	}	
 	return min;
-}
+};
 
 function getAvgInt(array){
 	let sum=0, size=array.length;
@@ -221,7 +221,7 @@ function getAvgInt(array){
 
 var getArrayData=function(){
 	return getIntArray(5,100);
-}
+};
 
 console.log('\n---Square arrays---');
 var sqArray1=[getArrayData(),getArrayData()];
@@ -287,9 +287,6 @@ printArray(doubleTriangle(size),size);
 console.log('\n');
 printArray(singleTriangle(size),size);
 //--------------------------------	
-/* function checkUndef(a){
-	return 
-} */
 function ascendingSort(a, b){
 	if(a.a!=b.a){
 	if(typeof b.a==undefined){
@@ -348,14 +345,13 @@ for(let i=0;i<arOfObj.length;i++){
 	str+=(i>0?", ":" ")+arOfObj[i].name;
 }
 console.log(str+"\n];");
-}
+};
 
-// Input data
 var obj1 = { name:'obj1', a: 2, c: 3, d: 3};
 var obj2 = { name:'obj2', a: 1 };
 var obj3 = { name:'obj3', a: 2, c: 3};
 var arOfObj = [obj1, obj2, obj3];
-// Calling method
+
 var res = objSort(arOfObj, 'asc');
 console.log('\n---Sort array of objects---');
 printResult(arOfObj);

@@ -1,6 +1,4 @@
-'use strict';
-
-console.log('----------------String Tasks----------------');
+console.log('----------------String Tasks---------------');
 //--------------------------------
 var reverseString=function(s){
 	var newStr='';
@@ -8,7 +6,7 @@ var reverseString=function(s){
 		newStr+=s[i];
 		}
 	return newStr;
-}
+};
 var str="string";
 
 console.log('Reverse String \''+str+'\': '+reverseString(str));
@@ -39,10 +37,8 @@ str="camelCase";
 console.log('String \''+str+'\' is in camelCase: '+isCamelCase(str));
 //--------------------------------
 function isPascalCase(str){
-	if(str.match(/_/)){
-		return true;
-		}
-	return false;
+
+	return str.search("_")>=0;
 }
 
 str="pascal_case";
