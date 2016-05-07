@@ -8,7 +8,7 @@ function getSum(str){
 	if(sum.search(/[a-fA-F]/)>-1){
 		return parseInt(sum,16);			
 		}else{
-		return parseInt(sum);
+		return parseInt(sum,10);
 	}
 }
 
