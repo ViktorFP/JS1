@@ -12,11 +12,25 @@ function getSum(str){
 	}
 }
 
+function printSum(){
+	let str='', nElements=arguments.length, array=[], sum=0;
+	for(let i=0;i<nElements;i++){
+	let element=arguments[i];
+		array[i]=getSum(element);
+		str+=element+" = "+array[i]+"\n";
+		sum+=array[i];
+		}
+		for(let i=0;i<nElements;i++){
+			str+=array[i]+" + ";
+			}
+		if(str.length>0){	
+			str=str.substring(0, str.length-2)+"= "+sum;
+		}
+	return str;
+}
+
 var str1 = '123x1z13', str2 = 'a123';
-var sum1=getSum(str1), sum2=getSum(str2);
-console.log(str1+" = "+sum1);
-console.log(str2+" = "+sum2);
-console.log(sum1+" + "+sum2+" = "+(sum1+sum2));
+console.log(printSum(str1, str2));
 //--------------------------------
 function createObj(str){
 	let data=str.split(';');
