@@ -352,6 +352,10 @@ var obj2 = { name:'obj2', a: 1 };
 var obj3 = { name:'obj3', a: 2, c: 3};
 var arOfObj = [obj1, obj2, obj3];
 
-var res = objSort(arOfObj, 'asc');
 console.log('\n---Sort array of objects---');
+console.log('asc:');
+var res = objSort(arOfObj, 'asc');
+printResult(arOfObj);
+console.log('des:');
+res = objSort(arOfObj, 'des');
 printResult(arOfObj);
